@@ -1,0 +1,138 @@
+/* Styles for the header container */
+.header-container {
+    padding: 20px;
+    background-color: #ec5353ce;
+  }
+ 
+  
+
+  /* Styles for the medium and session container */
+  .medium-session-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+    align-items: center;
+    background-color: #e6e6e6;
+    padding: 0; /* Remove padding */
+    margin-bottom: -20px; /* Adjust margin to remove space */
+  }
+  
+  /* Styles for the medium and session titles */
+  .medium-session-title {
+    margin-left: 10px;
+    font-weight: bold; /* Make the labels bold */
+  }
+  
+  /* Styles for the dropdown select elements */
+  .dropdown-select {
+    width: 150px;
+    padding: 8px;
+  }
+  
+  /* Styles for the attendance title */
+  .attendance-title {
+    font-size: 30px;
+    margin-bottom: 20px; /* Adds space below the title */
+    background-color: #3e4e79; /* Dark gray background for the title */
+    color: white; /* White text color for contrast */
+    padding: 1px; /* Add padding to the title */
+  }
+  
+    /* Styles for Admin button */
+    .main-button:nth-child(1) {
+        background-color: red;
+        font-size: 20px; /* Increase font size */
+      }
+      
+      /* Styles for Teacher button */
+      .main-button:nth-child(2) {
+        background-color: blue;
+        font-size: 20px; /* Increase font size */
+      }
+      
+      /* Styles for Student button */
+      .main-button:nth-child(3) {
+        background-color: green;
+        font-size: 20px; /* Increase font size */
+      }
+      
+      .home-icon {
+        font-size: 2rem; /* Adjust the size as needed */
+      }
+      /* Attendance.css */
+
+.selection-container {
+  margin-bottom: 20px; /* Adjust the value as needed for the desired spacing */
+}
+
+.section-selection-container {
+  margin-bottom: 20px; /* Adjust the value as needed for the desired spacing */
+}
+
+
+.selection-container {
+  margin-bottom: 20px;
+  margin-left: 25px; /* Adjust the left margin as needed */
+}
+
+
+.fill-attendance-container {
+  margin-left: 40px; /* Adjust the left margin as needed */
+}
+
+
+.selection-container {
+  margin-top: 10px; /* Add margin between each selection */
+}
+
+.class-label,
+.section-label,
+.date-label {
+  display: block;
+  margin-bottom: 5px;
+}
+/* Style for increasing the size of the dropdown arrow */
+.date-input::-webkit-calendar-picker-indicator {
+  font-size: 1.9rem; /* Adjust the font size as needed */
+}
+
+/* Styles for View Attendance button */
+.view-attendance-container {
+  text-align: left; /* Align the button to the left side */
+  margin-left: 30px;
+}
+
+.fill-attendance-container {
+  text-align: left; /* Align the button to the left side */
+  margin-left: 30px;
+}
+
+.view-attendance-button {
+  background-color:  #6a6ad6; /* Change the background color as needed */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding for button size */
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  cursor: pointer; /* Add pointer cursor on hover */
+  width: 180px; /* Set the width of both buttons */
+  height: 40px; /* Set the height of both buttons */
+}
+
+/* Styles for Fill Attendance button */
+.fill-attendance-button {
+  background-color: #6a6ad6; /* Change the background color as needed */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding for button size */
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  cursor: pointer; /* Add pointer cursor on hover */
+  margin-bottom: 5px;
+  width: 180px; /* Set the width of both buttons */
+  height: 40px; /* Set the height of both buttons */
+}
+
+.dropdown-select {
+  width: 220px; /* Increase the width of the dropdowns */
+  height: 40px; /* Increase the height of the dropdowns */
+}
+
+

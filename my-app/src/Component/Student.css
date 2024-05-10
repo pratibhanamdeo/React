@@ -1,0 +1,93 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6b7e99; /* Background color for the header container */
+    padding: 10px; /* Add padding for spacing */
+  }
+   
+  .right-navbar {
+    margin-left: auto; /* Align the right navbar content to the right */
+  }
+   
+  .filter-options {
+    display: flex;
+  }
+   
+  .filter-dropdown {
+    margin-right: 10px; /* Add spacing between filter dropdowns */
+  }
+   
+  /* Add any additional styling as needed */
+  /* Add your existing CSS styles */
+  .student-management-navbar {
+    display: flex;
+    justify-content: space-between; /* Align items to the left and right */
+    align-items: center; /* Align items vertically */
+  }
+   
+  .student-management-links {
+    display: flex;
+  }
+   
+  .student-management-link {
+    margin-left: 10px; /* Add spacing between links */
+  }
+   
+  .bold-text {
+    font-weight: bold;
+  }
+   
+  .search-navbar {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Align items vertically */
+  }
+  .admission-form-table input[type="text"] {
+    width: 120px; /* Adjust the width as needed */
+    padding: 12px; /* Add padding for spacing */
+  }
+   
+  /* Header.css */
+   
+  /* Styles for the header container */
+  .header-container {
+    padding: 10;
+    background-color: #fbf4f4;
+  }
+   
+  /* Styles for the dropdown select elements */
+  .dropdown-select {
+    width: 150px;
+    padding: 8px;
+  }
+   
+  /* Styles for the text input boxes */
+  .card input[type="text"] {
+    width: 300px;
+    height: 200px;
+    padding: 12px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 6px solid #ccc;
+    border-radius: 0px;
+    font-size: 25px;
+  }
+   
+  /* Add styles for highlighted placeholders */
+  .card input[type="text"]::placeholder {
+    color: #fadbdb; /* Red color for highlighted placeholders */
+    font-weight: bold; /* Bold font for highlighted placeholders */
+  }
+  .new-header {
+    background-color: rgb(100, 127, 183); /* Add your desired background color here */
+    padding: 5px; /* Optional: Add padding for better spacing */
+  }
+  .input-container {
+    background-color: rgb(251, 34, 157); /* Add your desired background color here */
+    padding: 10px; /* Optional: Add padding for better spacing */
+  }
+  .table-cell {
+    padding: 8px; /* Adjust the padding as needed */
+  }
+    

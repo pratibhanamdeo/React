@@ -1,0 +1,113 @@
+/* Styles for the header container */
+.header-container {
+  padding: 10px;
+  background-color: #d1cece;
+}
+
+/* Styles for the medium and session container */
+.medium-session-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #e6e6e6;
+  padding: 10px;
+}
+
+/* Styles for the medium and session titles */
+.medium-session-title {
+  margin-left: 20px;
+}
+
+/* Styles for the dropdown select elements */
+.dropdown-select {
+  width: 150px;
+  padding: 8px;
+}
+
+/* Styles for the text input boxes */
+.card input[type="text"] {
+  width: 300px;
+  height: 200px;
+  padding: 12px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 6px solid #ccc;
+  border-radius: 0px;
+  font-size: 25px;
+}
+
+/* Add styles for highlighted placeholders */
+.card input[type="text"]::placeholder {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+/* Styles for the attendance container */
+.attendance-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1px;
+}
+
+/* Styles for individual attendance inputs */
+.admin-attendance-input,
+.student-attendance-input,
+.staff-attendance-input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+/* Center text within input boxes */
+.card input[type="text"] {
+  text-align: center;
+}
+
+/* Styles for the card container */
+.card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for center-aligned inputs */
+.center-input {
+  width: 0%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.center-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Styles for individual attendance inputs */
+.admin-attendance-input,
+.student-attendance-input,
+.staff-attendance-input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 180px;
+  box-sizing: border-box;
+  background-color: hsl(211, 100%, 50%); /* Change background color to blue */
+}
+/* Styles for individual attendance inputs */
+.class-attendance-input,
+.staff-attendance-input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 180px;
+  box-sizing: border-box;
+  background-color: hsl(211, 100%, 50%); /* Change background color to blue */
+}
+
+
+
