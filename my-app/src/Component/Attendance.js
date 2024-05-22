@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faUserGraduate, faUserCheck } from '@fortawesome/free-solid-svg-icons'; // Required icons
+import { faUser,  faHome,faUserGraduate, faUserCheck } from '@fortawesome/free-solid-svg-icons'; // Required icons
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Attendance = () => {
@@ -11,11 +11,12 @@ const Attendance = () => {
   return (
     <div className="attendance-container">
       <div className="home-icon" onClick={handleHomeIconClick}>
-        <FontAwesomeIcon icon={faHome} style={{ marginRight: '10px', fontSize: '24px' }} />
+        {/* <FontAwesomeIcon icon={faHome} style={{ marginTop: '10px', fontSize: '24px' }} /> */}
       </div>
 
-      <div className="attendance-header">
+      <div className="attendance-header" style={{ backgroundColor: '#ADD8E6', padding: '1px' }}>
         <h1 className="attendance-title">Attendance Management</h1>
+        <FontAwesomeIcon icon={faHome} style={{ marginTop: '10px', fontSize: '24px' }} />
       </div>
 
       <div className="icon-row" style={{ display: 'flex', justifyContent: 'space-between', margin: '20px 0' }}>
