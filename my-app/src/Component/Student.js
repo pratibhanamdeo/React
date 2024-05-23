@@ -10,7 +10,8 @@ const Navbar = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get('http://localhost:4900/api/Students');
-        // API response ko UI ke fields ke sath map karna;
+        // API response ko UI ke fields ke sath map karna
+        // Map  the API Field with UI 
         const dataWithMappings = response.data.map(record => ({
           ...record,
           present: record.Present_Days,
