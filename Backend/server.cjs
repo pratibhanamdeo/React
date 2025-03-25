@@ -36,6 +36,41 @@ app.get('/api/Students', (req, res) => {
 
 });
 
+
+app.get('/api/staffAttendancetable', async (req, res) => {
+  console.log("GET /staffAttendance");
+  try {
+    // Check database connection
+    if (!schoolDbConnection) {
+      console.log("GET /staffAttendance: School database connection not established.");
+      return res.status(500).json({ error: "School database connection not established" });
+    }
+
+    const query = `
+      SELECT 
+        a.STAFF_NAME, 
+        a.STAFF_ROLE, 
+        b.ACADEMIC_YEAR, 
+        b.STATUS, 
+        COUNT(b.STATUS) AS STATUS_COUNT,
+        b.ATTENDANCE_DATE,
+        ROUND((COUNT(b.STATUS) * 100.0) / SUM(COUNT(b.STATUS)) OVER (PARTITION BY a.STAFF_NAME, b.ACADEMIC_YEAR), 2) AS STATUS_PERCENT
+      FROM STAFF a
+      JOIN STAFF_ATTENDANCE b ON a.STAFF_ID = b.STAFF_ID
+      GROUP BY a.STAFF_NAME, a.STAFF_ROLE, b.ACADEMIC_YEAR, b.STATUS
+      ORDER BY a.STAFF_NAME, b.ACADEMIC_YEAR, b.STATUS`;
+
+    console.log('staffAttendance ........Executing query'); // Removed CurrentUser from log
+    const [staffAttendanceResult] = await schoolDbConnection.query(query); // Removed [CurrentUser] parameter
+
+    console.log("GET /staffAttendance: staffAttendance fetched successfully.");
+    return res.status(200).json(staffAttendanceResult);
+
+  } catch (err) {
+    console.error('Error fetching options:', err.message);
+    res.status(500).json({ error: 'Database query error' });
+  }
+});
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
